@@ -65,7 +65,7 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 backdrop-blur-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black tracking-wider accent-gold">AURA AUTOS</a>
+            <a href="#" class="text-2xl font-black tracking-wider accent-gold">AKH Autos GHS</a>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="#showroom" class="text-gray-300 hover:text-accent-gold transition-colors">Showroom</a>
                 <a href="#calculator" class="text-gray-300 hover:text-accent-gold transition-colors">Financing</a>
@@ -91,7 +91,7 @@
         <section class="hero-bg h-screen flex items-center justify-center text-center">
             <div class="container mx-auto px-6">
                 <h1 class="text-4xl md:text-7xl font-black text-white uppercase tracking-wider leading-tight">Where Power <br>Meets <span class="accent-gold">Perfection</span></h1>
-                <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-2xl mx-auto">Experience the zenith of automotive engineering. Discover our curated collection of the world's most exclusive supercars.</p>
+                <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-2xl mx-auto">Experience the most sought-after cars on the planet.</p>
                 <div class="mt-8">
                     <a href="#showroom" class="btn-primary text-lg">Explore Collection</a>
                 </div>
@@ -118,46 +118,8 @@
             </div>
         </section>
 
-        <!-- Financing Calculator Section -->
-        <section id="calculator" class="py-20 md:py-32 bg-black">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-5xl font-bold">Financing Calculator</h2>
-                    <p class="text-gray-400 mt-2">Estimate your payments on your dream machine.</p>
-                </div>
-
-                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center card-bg p-8 rounded-lg shadow-2xl">
-                    <form id="finance-form" class="space-y-6">
-                        <div>
-                            <label for="vehicle-price" class="block text-sm font-medium text-gray-300">Vehicle Price ($)</label>
-                            <input type="number" id="vehicle-price" name="vehicle-price" value="450000" class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:ring-amber-400 focus:border-amber-400">
-                        </div>
-                        <div>
-                            <label for="down-payment" class="block text-sm font-medium text-gray-300">Down Payment ($)</label>
-                            <input type="number" id="down-payment" name="down-payment" value="50000" class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:ring-amber-400 focus:border-amber-400">
-                        </div>
-                        <div>
-                            <label for="interest-rate" class="block text-sm font-medium text-gray-300">Annual Interest Rate (%)</label>
-                            <input type="number" step="0.1" id="interest-rate" name="interest-rate" value="5.5" class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:ring-amber-400 focus:border-amber-400">
-                        </div>
-                        <div>
-                            <label for="loan-term" class="block text-sm font-medium text-gray-300">Loan Term (Years)</label>
-                            <select id="loan-term" name="loan-term" class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:ring-amber-400 focus:border-amber-400">
-                                <option>3</option>
-                                <option selected>5</option>
-                                <option>7</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="w-full btn-primary">Calculate Payment</button>
-                    </form>
-                    <div class="text-center p-8 border-2 border-dashed border-gray-700 rounded-lg">
-                        <h3 class="text-lg font-medium text-gray-400">Estimated Monthly Payment</h3>
-                        <p id="monthly-payment" class="text-4xl md:text-6xl font-black accent-gold my-4">$0.00</p>
-                        <p class="text-sm text-gray-500">This is an estimate and does not include taxes, title, or other fees. Actual payment may vary.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
+           
 
         <!-- Contact Section -->
         <section id="contact" class="py-20 md:py-32">
@@ -395,4 +357,5 @@
             // Finance form submission
             financeForm.addEventListener('submit', (e) => {
                 e.preventDefault();
+
 
